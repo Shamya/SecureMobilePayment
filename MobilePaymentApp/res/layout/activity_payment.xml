@@ -1,0 +1,144 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_pay3"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView_CardHolderName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Card Holder Name"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/editText_Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:background="@drawable/edittext"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/textView_CardNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Card Number"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/editText_CardNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:maxLength="16"
+        android:background="@drawable/edittext"
+        android:inputType="number" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView_Date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Expiry Date"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TableRow
+        android:id="@+id/tableRow_Date"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginLeft="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <EditText
+            android:id="@+id/editText_Month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="40dp"
+            android:inputType="number"
+            android:maxLength="2"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="@drawable/edittext"
+            android:ems="10" />
+
+        <TextView
+            android:id="@+id/textView_Slash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <EditText
+            android:id="@+id/editText_Year"
+            android:width="80dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext"
+            android:inputType="number"
+            android:maxLength="4"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:ems="10" />
+
+    </TableRow>
+
+    <TextView
+        android:id="@+id/textView_CVV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CVV"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/editText_CVV"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="250dp"
+        android:layout_marginLeft="250dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLength="3"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:inputType="numberPassword"
+        android:background="@drawable/edittext"
+        android:ems="10" />
+
+    <Button
+        android:id="@+id/button_Pay"
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="100dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="@drawable/blackbutton"
+        android:text="Pay" />
+
+</LinearLayout>
