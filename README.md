@@ -1,4 +1,6 @@
 ##Secure Payment via Mobile Phone
+A prototype for an E2E mobile app with secure payment. Refer report for more details on security.
+Below is a detailed instruction you could follow without any prior exposure to mobile app development. 
 
 ###Overview:
 
@@ -21,7 +23,7 @@
 
 ###Steps to import Login Server:
 
-1. In eclipese, select import from file
+1. In eclipse, select import from file
 2. Select Existing project into workspace
 3. Opt for Select archive file
 4. Browse LoginServer.zip
